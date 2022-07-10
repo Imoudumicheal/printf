@@ -13,7 +13,6 @@ unsigned int i;
 print_t p[] = {
 {"c", print_c},
 {"s", print_s},
-{"%", print_i},
 {NULL, NULL}
 };
 for (i = 0; p[i].t != NULL; i++)
