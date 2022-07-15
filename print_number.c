@@ -28,7 +28,7 @@ return (i);
  * @params: the parameter struct
  * Return: chars printed
  */
-int print_number(char *str, params_t *params)
+int print_number(char *str, print_t *params)
 {
 unsigned int i = _strlen(str);
 int neg = (!params->unsign && *str == '-');
@@ -55,7 +55,7 @@ return (print_number_left_shift(str, params));
  * @params: the parameter struct
  * Return: chars printed
  */
-int print_number_right_shift(char *str, params_t *params)
+int print_number_right_shift(char *str, print_t *params)
 {
 unsigned int n = 0, neg, neg2, i = _strlen(str);
 char pad_char = ' ';
@@ -94,7 +94,7 @@ return (n);
  * @params: the parameter struct
  * Return: chars printed
  */
-int print_number_left_shift(char *str, params_t *params)
+int print_number_left_shift(char *str, print_t *params)
 {
 unsigned int n = 0, neg, neg2, i = _strlen(str);
 char pad_char = ' ';
